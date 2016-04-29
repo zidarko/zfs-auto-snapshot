@@ -530,7 +530,10 @@ SNAPPROP="-o com.sun:auto-snapshot-desc='$opt_event'"
 
 # ISO style date; fifteen characters: YYYY-MM-DD-HHMM
 # On Solaris %H%M expands to 12h34.
-DATE=$(date --utc +%F-%H%M)
+#DATE=$(date --utc +%F-%H%M)
+# Zidar, 2016 - use local time instead of UTC
+DATE=$(date +%F-%H%M)
+
 
 # The snapshot name after the @ symbol.
 SNAPNAME="$opt_prefix${opt_label:+$opt_sep$opt_label}-$DATE"

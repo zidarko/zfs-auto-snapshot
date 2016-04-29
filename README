@@ -19,3 +19,10 @@ wget https://github.com/zfsonlinux/zfs-auto-snapshot/archive/master.zip
 unzip master.zip
 cd zfs-auto-snapshot-master
 make install
+
+Recent changes:
+-------------
+
+2016-04-29:
+1. Explicitly defined PATH in the cron scripts.
+2. Set the snapshot tool to use local time format instead of UTC.
