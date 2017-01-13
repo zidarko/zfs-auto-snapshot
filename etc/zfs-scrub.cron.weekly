@@ -1,0 +1,10 @@
+#!/bin/bash
+# scrub ZFS pools in the system
+
+PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin/:$PATH"
+export PATH
+
+for i in `zpool list -H -o name`;
+        do
+        zpool scrub "$i"
+        done

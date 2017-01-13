@@ -23,6 +23,9 @@ make install
 Recent changes:
 -------------
 
+2017-01-13:
+1. Changed all cron scripts to Bash.
+2. Add script to scrub ZFS pools on a weekly basis.
 2016-04-29:
 1. Explicitly defined PATH in the cron scripts.
 2. Set the snapshot tool to use local time format instead of UTC.
